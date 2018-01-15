@@ -1,0 +1,322 @@
+% resume.tex
+% vim:set ft=tex spell:
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{chemformula}
+\usepackage{tgpagella}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+%%%
+%%% contact info and headings
+%%%
+\begin{center}
+{\LARGE \textbf{Kraig J. Andrews}}
+
+61943 Mustang Drive\ \ \textbullet
+%\ \ Suite\ 1001\ \ \textbullet
+\ \ South Lyon, MI 48178
+\\
+(248) 798-9388\ \ \textbullet
+\ \ kraigandrews1992@gmail.com
+\end{center}
+
+%%%
+%%% relevant education
+%%%
+\hrule
+\vspace{-0.4em}
+\subsection*{Education}
+
+\begin{itemize}
+	\parskip=0.1em
+
+    % Phd
+    \item 
+    \headerrow
+        {\textbf{Wayne State University}}
+        {\textbf{Detroit, MI}}
+    \\
+    \headerrow
+        {\emph{Department of Physics \& Astronomy, Ph.D. Physics}}
+        {\emph{2014 -- Present}}
+    \begin{itemize*}
+        \item\emph{Advisor:} Dr. Zhixian Zhou
+        \item\emph{Thesis Title:} ``Quantum Transport Properties and Scattering Mechanisms in Transition Metal Dichalcogenides'' 
+    \end{itemize*}
+    
+    % Masters
+    \item 
+    \headerrow
+        {\textbf{Wayne State University}}
+        {\textbf{Detroit, MI}}
+    \\
+    \headerrow
+        {\emph{Department of Physics \& Astronomy, M.S. Physics}}
+        {\emph{2017}}
+
+    % B.S. number 1
+	\item 
+	\headerrow
+		{\textbf{Michigan State University}}
+		{\textbf{East Lansing, MI}}
+	\\
+	\headerrow
+		{\emph{Department of Physics \& Astronomy, B.S. Physics}}
+        {\emph{2014}}
+    
+    % B.S. number 2
+    \item 
+    \headerrow
+        {\textbf{Michigan State University}}
+        {\textbf{East Lansing, MI}}
+    \\
+    \headerrow
+        {\emph{Department of Physics \& Astronomy, B.S. Astrophysics}}
+        {\emph{2014}}
+
+\end{itemize}
+
+%%%
+%%% relevant experience
+%%%
+\hrule
+\vspace{-0.4em}
+\subsection*{Experience}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item
+	\headerrow
+		{\textbf{Nano Fabrication \& Electron Transport Laboratory}}
+		{\textbf{Wayne State University, Detroit, MI}}
+	\\
+	\headerrow
+		{\emph{Graduate Research Assistant}}
+		{\emph{2015 -- Present}}
+	\begin{itemize*}
+		\item Fabricate two-dimensional field effect transistors using transition metal dichalcogenides, such as 
+		molybdenum disulphide, tungsten diselenide, and molybdenum diselenide to investigate intrinsic transport properties.
+		\item Develop novel techniques for making low-resistance Ohmic contacts to a wide variety of 
+		two-dimensional semiconductors.
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{National Institute of Materials Science}}
+		{\textbf{Tsukuba, Ibaraki Prefecture, Japan}}
+	\\
+	\headerrow
+		{\emph{Visiting Graduate Researcher, Summer Intern}}
+		{\emph{2017}}
+	\begin{itemize*}
+		\item Investigate methods for surface modification of two-dimensional semiconductors for
+		the use of creating a new low-resistance Ohmic contact strategy.
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{Interational Course on Computational Physics}}
+		{\textbf{Delft, Netherlands \& East Lansing, MI}}
+	\\
+	\headerrow
+		{\emph{Undergraduate Researcher}}
+		{\emph{2014}}
+	\begin{itemize*}
+		\item A Joint collaboration with Technische Universiteit Delft and Michigan State University involving the development of 
+		computational models of various physical systems to model interactions of materials and optimize employed techniques.
+	\end{itemize*}
+
+	\item 
+	\headerrow
+		{\textbf{Jenoptik Laser Technologies}}
+		{\textbf{Brighton, MI}}
+	\\
+	\headerrow
+		{\emph{Summer Intern}}
+		{\emph{2013}}
+	\begin{itemize*}
+		\item Contributed in development of a user interface for laser welding machine
+		that allows user manipulation of robotic end-arm tooling.
+		\item Incorporated microcontroller program via interfaced electronic devices and 
+		several developed algorithms to analyze physical data and feedback in real-time. 
+	\end{itemize*}
+\end{itemize}
+
+%%%
+%%% relevant talks
+%%%
+\hrule
+\vspace{-0.4em}
+\subsection*{Selected Publications}
+
+\begin{enumerate*}
+	\parskip=0.1em
+	\item ``\emph{High Performance \ch{WSe2} Phototransistors with 2D/2D Ohmic Contacts.}''
+	Tianjiao Wang, \textbf{Kraig Andrews}, Arthur Bowman, Tu Hong, Michael Koehler, Jiaqiang Yan, David Mandrus, Zhixian Zhou, and Ya-Qiong Xu.
+\end{enumerate*}
+
+%%%
+%%% relevant talks
+%%%
+\hrule
+\vspace{-0.4em}
+\subsection*{Selected Presentations}
+
+\begin{enumerate*}
+	\parskip=0.1em
+	\item ``\emph{Palladium Diselenide as a New Two-Dimensional Electronic Material Beyond Silicon.}'' 
+	\textbf{Kraig Andrews}, Arthur Bowman, Upendra Rijal, Amanda Haglund, David Mandrus, and Zhixian Zhou.
+	Society of Vacuum Coaters TechCon, Orlando, FL. May 2018.
+
+	\bigskip
+
+	\item ``\emph{Improved On-Off in Ratio Black Phosphorus Field-Effect Transistors with True Ohmic Contacts.}''  
+	\textbf{Kraig Andrews}, Arthur Bowman, Upendra Rijal, Michael Koehler, David Mandrus, and Zhixian Zhou. 
+	APS March Meeting, Los Angeles, CA. March 2018.
+
+	\bigskip
+
+	\item ``\emph{High Mobility Palladium Diselenide Field-Effect Transistors Using Heaving $n-$Doped Graphene Contacts.}''
+	Arthur Bowman, \textbf{Kraig Andrews}, Upendra Rijal, Amanda Haglund, David Mandrus, and Zhixian Zhou.
+	APS March Meeting, Los Angeles, CA. March 2018.
+
+	\bigskip
+
+	\item ``\emph{Measuring the Barrier Height at Transition Metal Dichalcogenide Heterojunctions.}''
+	Upendra Rijal, Arthur Bowman, \textbf{Kraig Andrews}, Michael Koehler, David Mandrus, and Zhixian Zhou.
+	APS March Meeting, Los Angeles, CA. March 2018.
+
+	\bigskip
+
+	\item ``\emph{High-Performance Top-Gated \ch{WSe2} Transistors with Two-Dimensional Ohmic Contacts.}''
+	\textbf{Kraig Andrews}, Upendra Rijal, Arthur Bowman, Hsun-Jen Chuang, Sagar Paduel, Michael Koehler, David Mandrus, and Zhixian Zhou.
+	41$^\mathrm{st}$ Annual Symposium American Vacuum Society- Michigan Chapter, Ann Arbor, MI. May 2017.
+
+	\bigskip
+
+	\item ``\emph{Substrate Dependence of Hall and Field-Effect Mobilities in Few-Layer \ch{MoS2} Field-Effect Transistors.}''
+	Bhim Chamlagain, Perera Meeghage, Hsun-Jen Chuang, Arthur Bowman, Upendra Rijal, \textbf{Kraig Andrews}, Joseph Klesko,
+	Charles Winter, and Zhixian Zhou. APS March Meeting, Boston, MA, March 2016.
+\end{enumerate*}
+
+%%%
+%%% courses taught
+%%%
+\hrule
+\vspace{-0.4em}
+\subsection*{Teaching Experience}
+
+\begin{itemize*}
+	\parskip=0.1em
+	\item[]
+	\headerrow
+		{Teaching Assistant, General Physics I, Wayne State University}
+		{Winter 2018}
+	\item[]
+	\headerrow
+		{Teaching Assistant, General Physics II, Wayne State University}
+		{Autumn 2017}
+	\item[]
+	\headerrow
+		{Teaching Assistant, General Physics II, Wayne State University}
+		{Winter 2017}
+	\item[]
+	\headerrow
+		{Teaching Assistant, General Physics II, Wayne State University}
+		{Autumn 2016}
+	\item[]
+	\headerrow
+		{Teaching Assistant, General Physics I, Wayne State University}
+		{Summer 2016}
+	\item[]
+	\headerrow
+		{Teaching Assistant, General Physics I, Wayne State University}
+		{Autumn 2015}	
+	\item[]
+	\headerrow
+		{Teaching Assistant, General Physics Lab I, Wayne State University}
+		{Summer 2015}
+	\item[]
+	\headerrow
+		{Laboratory Instructor, Conceptual Physics Lab I, Wayne State University}
+		{Winter 2015}
+	\item[]
+	\headerrow
+		{Laboratory Instructor, Descriptive Astronomy Lab I, Wayne State University}
+		{Autumn 2014}
+	\item[]
+	\headerrow
+		{Teaching Assistant, Introductory Physics II, Michigan State University}
+		{Winter 2014}
+	\item[]
+	\headerrow
+		{Laboratory Instructor, Planets and Telescopes, Michigan State University}
+		{Winter 2013}
+	\item[]
+	\headerrow
+		{Teaching Assistant, Introductory Physics I, Michigan State University}
+		{Autumn 2013}
+	\item[]
+	\headerrow
+		{Teaching Assistant, Introductory Physics II, Michigan State University}
+		{Winter 2012}
+\end{itemize*}
+
+%%%
+%%% relevant skills
+%%%
+\hrule
+\vspace{-0.4em}
+\subsection*{Core Technical Skills}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+	\item[Nanofabrication:]
+	Atomic force microscopy (AFM), Electron beam lithography, Photolithography, Scanning electron microscopy (SEM), General clean room abilities, Physical vapor deposition (PVD), Electron beam deposition, Plasma etching, Reactive ion etching (RIE)
+	\item[Languages \& Software:]
+	\CPP, Fortran, Java, JavaScript, \LaTeX, Python, shell script, Microsoft Office, Matlab, Mathematica
+	\item[Operating Systems:]
+	OS X, Linux OS, Microsoft Windows
+\end{description*}
+\end{indentsection}
+
+\end{document}
