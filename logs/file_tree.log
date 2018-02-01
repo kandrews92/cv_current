@@ -1,0 +1,20 @@
+.
+|-- README.md
+|-- clean01.aux
+|-- clean01.fdb_latexmk
+|-- clean01.log
+|-- clean01.pdf
+|-- clean01.synctex.gz
+|-- clean01.tex
+|-- logs
+|   `-- file_tree.log
+|-- mk
+|-- v01
+|   |-- cv-long-nov2017.pdf
+|   `-- cv-long-nov2017.tex
+|-- v02
+|   |-- cv-short-nov2017.pdf
+|   `-- cv-short-nov2017.tex
+`-- veryclean
+
+3 directories, 14 files
