@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.11.6)  31 JAN 2018 20:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.11.6)  6 APR 2018 18:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1250,7 +1250,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for TS1+qpl on input line 53.
+LaTeX Font Info:    Try loading font information for TS1+qpl on input line 57.
 
 (c:/texlive/2014/texmf-dist/tex/latex/tex-gyre/ts1qpl.fd
 File: ts1qpl.fd 2009/09/25 v1.2 font definition file for TS1/qpl
@@ -1273,7 +1273,7 @@ pe1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmsy10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/tex-gyre/
 qplb.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb><c:/t
 exlive/2014/texmf-dist/fonts/type1/public/tex-gyre/qplri.pfb>
-Output written on clean01.pdf (2 pages, 114972 bytes).
+Output written on clean01.pdf (2 pages, 114921 bytes).
 PDF statistics:
  42 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream
