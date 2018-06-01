@@ -10,14 +10,6 @@
 |-- logs
 |   `-- file_tree.log
 |-- mk
-|-- v01
-|   |-- Thumbs.db
-|   |-- cv-long-nov2017.pdf
-|   `-- cv-long-nov2017.tex
-|-- v02
-|   |-- Thumbs.db
-|   |-- cv-short-nov2017.pdf
-|   `-- cv-short-nov2017.tex
 `-- veryclean
 
-3 directories, 17 files
+1 directory, 11 files
